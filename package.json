@@ -1,20 +1,32 @@
 {
   "name": "express-workshop",
   "version": "1.0.0",
-  "description": "An API REST using Express.js",
+  "description": "This is a project for the Node.js workshop",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikebsg01/ExpressJS-Workshop"
+  },
   "keywords": [
-    "api",
-    "rest",
+    "node",
     "express",
-    "nodejs"
+    "jwt",
+    "mysql"
   ],
   "author": "Michael Serrato",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikebsg01/ExpressJS-Workshop/issues"
+  },
+  "homepage": "https://github.com/mikebsg01/ExpressJS-Workshop#readme",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   }
 }
