@@ -2,11 +2,18 @@ const express = require("express");
 const app = express();
 const { pokemon } = require("./pokedex.json");
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.get("/", (req, res, next) => {
   return res.status(200).send("Bienvenido al Pokedex!");
 });
 
-app.get("/pokemon/all", (req, res, next) => {
+app.post('/pokemon', (req, res, next) => {
+  return res.status(200).send(req.body);
+});
+
+app.get("/pokemon", (req, res, next) => {
   return res.status(200).send(pokemon);
 });
 
