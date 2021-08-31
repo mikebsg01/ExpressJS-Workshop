@@ -24,9 +24,11 @@
   },
   "homepage": "https://github.com/mikebsg01/ExpressJS-Workshop#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.12"
   }
 }
