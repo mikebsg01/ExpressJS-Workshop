@@ -25,6 +25,7 @@
   "homepage": "https://github.com/mikebsg01/ExpressJS-Workshop#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
