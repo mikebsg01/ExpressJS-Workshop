@@ -1,5 +1,4 @@
 // Dependencies
-const morgan = require("morgan");
 const express = require("express");
 const app = express();
 
@@ -13,7 +12,13 @@ const auth = require("./middleware/auth");
 const notFound = require("./middleware/notFound");
 
 app.use(cors);
-app.use(morgan("dev"));
+
+if (process.env.NODE_ENV === "development") {
+  const morgan = require("morgan");
+
+  app.use(morgan("dev"));
+}
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
